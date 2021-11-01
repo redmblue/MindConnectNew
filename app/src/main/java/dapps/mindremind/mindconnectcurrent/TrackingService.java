@@ -66,7 +66,6 @@ public class TrackingService extends Service {
         loginToFirebase();
     }
 
-//Create the persistent notification//
 
     private void buildNotification() {
         String stop = "stop";
@@ -78,7 +77,7 @@ public class TrackingService extends Service {
                 .setContentTitle(getString(R.string.app_name))
                 .setContentText(getString(R.string.tracking_enabled_notif))
 
-//Make this notification ongoing so it can’t be dismissed by the user//
+
 
                 .setOngoing(true)
                 .setContentIntent(broadcastIntent)
@@ -90,11 +89,11 @@ public class TrackingService extends Service {
         @Override
         public void onReceive(Context context, Intent intent) {
 
-//Unregister the BroadcastReceiver when the notification is tapped//
+
 
             unregisterReceiver(stopReceiver);
 
-//Stop the Service//
+
 
             stopSelf();
         }
@@ -102,50 +101,25 @@ public class TrackingService extends Service {
 
     private void loginToFirebase() {
 
-//Authenticate with Firebase, using the email and password we created earlier//
+
 
         String email = getString(R.string.test_email);
         String password = getString(R.string.test_password);
 
-//Call OnCompleteListener if the user is signed in successfully//
-//FirebaseDatabase.getInstance();
-/*
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(Task<AuthResult> task) {
 
-//If the user has been authenticated...//
 
-                if (task.isSuccessful()) {
-
-//...then call requestLocationUpdates//
-
-                    requestLocationUpdates();
-                } else {
-
-//If sign in fails, then log the error//
-
-                    Log.d(TAG, "Firebase authentication failed");
-                    //Toast.makeText(context,"Firebase authentication failed", Toast.LENGTH_LONG).show();
-                    //Toast.makeText(context, "Firebase authentication failed", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-        */
 
     }
 
-//Initiate the request to track the device's location//
 
     private void requestLocationUpdates() {
         LocationRequest request = new LocationRequest();
 
-//Specify how often your app should request the device’s location//
+
 
         request.setInterval(10000);
 
-//Get the most accurate location data available//
+
 
         request.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         FusedLocationProviderClient client = LocationServices.getFusedLocationProviderClient(this);
@@ -153,25 +127,24 @@ public class TrackingService extends Service {
         int permission = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION);
 
-//If the app currently has access to the location permission...//
 
         if (permission == PackageManager.PERMISSION_GRANTED) {
 
-//...then request location updates//
+
 
             client.requestLocationUpdates(request, new LocationCallback() {
                 @Override
                 public void onLocationResult(LocationResult locationResult) {
 
-//Get a reference to the database, so your app can perform read and write operations//
+
 
                     DatabaseReference ref = FirebaseDatabase.getInstance().getReference(path);
                     //FirebaseDatabase  base = FirebaseDatabase.getInstance();
                     Location location = locationResult.getLastLocation();
                     if (location != null) {
 
-//Save the location data to the database//
-                        //int id = 0;
+
+                        
                         String id = ref.push().getKey();
                         ref.child(id).setValue(location);
                         System.out.println("Hello.");
