@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "491071268424",
+    "firebase_url": "https://mindconnect-734c8.firebaseio.com",
+    "project_id": "mindconnect-734c8",
+    "storage_bucket": "mindconnect-734c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491071268424:android:c5659a12a988aaeb349a7d",
+        "android_client_info": {
+          "package_name": "com.example.mindconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491071268424-0m77193g2q7vujpcdfepmv1d6c48quii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mindconnect",
+            "certificate_hash": "75b767f8cfda8f9885a043e4f4380660d597a397"
+          }
+        },
+        {
+          "client_id": "491071268424-kvt2idk8qnps93ldflts2r6kh0ci83co.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mindconnect",
+            "certificate_hash": "eca11e261fbfc5968438dae533644b5a594eca5e"
+          }
+        },
+        {
+          "client_id": "491071268424-coq7i7on94hmk9n7n01mpnf5g4kqllio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1amLOK3SK3dovHfXRMKO8ewyqVmvEIbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491071268424-coq7i7on94hmk9n7n01mpnf5g4kqllio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491071268424:android:2b2343baa47411fd349a7d",
+        "android_client_info": {
+          "package_name": "dapps.mindremind.mindconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491071268424-j4ei8dnmn64mj2cj9f3ssimkehu8ds7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dapps.mindremind.mindconnect",
+            "certificate_hash": "eca11e261fbfc5968438dae533644b5a594eca5e"
+          }
+        },
+        {
+          "client_id": "491071268424-coq7i7on94hmk9n7n01mpnf5g4kqllio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1amLOK3SK3dovHfXRMKO8ewyqVmvEIbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491071268424-coq7i7on94hmk9n7n01mpnf5g4kqllio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491071268424:android:fc7ea12d99b5c106349a7d",
+        "android_client_info": {
+          "package_name": "dapps.mindremind.mindconnectcurrent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491071268424-p05jjfbb27n02691d6kjheamjk41vim7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dapps.mindremind.mindconnectcurrent",
+            "certificate_hash": "75b767f8cfda8f9885a043e4f4380660d597a397"
+          }
+        },
+        {
+          "client_id": "491071268424-hnjliiu596m0u1jp1j1ij9opshaog3nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dapps.mindremind.mindconnectcurrent",
+            "certificate_hash": "eca11e261fbfc5968438dae533644b5a594eca5e"
+          }
+        },
+        {
+          "client_id": "491071268424-coq7i7on94hmk9n7n01mpnf5g4kqllio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1amLOK3SK3dovHfXRMKO8ewyqVmvEIbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491071268424-coq7i7on94hmk9n7n01mpnf5g4kqllio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
